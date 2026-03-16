@@ -1,0 +1,65 @@
+# ╔═══════════════════════════════════════════════════════════╗
+# ║              SimpleHomes Configuration                    ║
+# ║                   by zAxelMB                              ║
+# ╚═══════════════════════════════════════════════════════════╝
+
+# Número máximo de homes por defecto
+# Los jugadores pueden tener más homes con permisos especificos simplehomes.limit.X
+max-homes: 1
+
+# Tiempo de espera para ser teletransportado
+# 0 = instantáneo
+teleport-delay: 3
+
+# Tiempo de espera para el comando /home (en segundos)
+# el permiso simplehomes.bypass.cooldown quita este tiempo de espera
+teleport-cooldown: 5
+
+# Cancela el teleport si el jugador se mueve
+cancel-on-move: true
+
+# Cancela el teleport si el jugador recibe daño durante el delay
+cancel-on-damage: true
+
+# ═══════════════════════════════════════════════════════════
+#                       MESSAGES
+# ═══════════════════════════════════════════════════════════
+
+messages:
+  prefix: "§8[§5SimpleHomes§8]§r"
+  
+  # Mensajes de éxito
+  home-set: "§aHome '§e{home}§a' establecido correctamente"
+  home-deleted: "§cHome '§e{home}§c' eliminado"
+  teleported: "§a¡Teletransportado a '§e{home}§a'!"
+  
+  # Mensajes de error
+  home-not-found: "§cNo tienes un home llamado '§e{home}§c'"
+  home-already-exists: "§cYa tienes un home llamado '§e{home}§c'. Usa §e/delhome {home} §cpara eliminarlo primero"
+  max-homes: "§cHas alcanzado el límite de homes (§e{max}§c)"
+  cooldown: "§cDebes esperar §e{time}§c segundos antes de usar este comando"
+  
+  # Mensajes informativos
+  teleporting: "§eTeletransportándote en §a{delay}§e segundos... §7¡No te muevas!"
+  teleport-cancelled-move: "§c¡Teleport cancelado! §7Te moviste"
+  teleport-cancelled-damage: "§c¡Teleport cancelado! §7Recibiste daño"
+  
+  # Home list
+  home-list: "§aTus homes: §e{homes}"
+  no-homes: "§cNo tienes homes establecidos. Usa §e/sethome <nombre>"
+  
+  # Uso de comandos
+  usage-home: "§eUso: §7/home <nombre>"
+  usage-sethome: "§eUso: §7/sethome <nombre>"
+  usage-delhome: "§eUso: §7/delhome <nombre>"
+
+# ═══════════════════════════════════════════════════════════
+#                    CONFIGURACIÓN AVANZADA
+# ═══════════════════════════════════════════════════════════
+
+# Nombre del archivo donde se guardan los homes
+# No modificar a menos que sepas lo que haces
+homes-file: "homes.yml"
+
+# Versión de configuración (no modificar)
+config-version: 1
