@@ -1,0 +1,52 @@
+name: SimpleHomes
+main: zaxelmb\simplehomes\Loader
+author: zAxelMB
+version: 1.0.0
+api: 5.0.0
+description: "Simple home system with teleport delay and cooldown"
+
+permissions:
+
+  simplehomes.command.home:
+    description: "Allows teleporting to homes"
+    default: true
+  
+  simplehomes.command.sethome:
+    description: "Allows setting homes"
+    default: true
+  
+  simplehomes.command.delhome:
+    description: "Allows deleting homes"
+    default: true
+  
+  simplehomes.command.homes:
+    description: "View your homes"
+    default: true
+    
+  simplehomes.bypass.cooldown:
+    description: "Bypass teleport cooldown"
+    default: op
+  
+  simplehomes.limit.1:
+    description: "Allows 1 home"
+    default: true
+  
+  simplehomes.limit.2:
+    description: "Allows 2 homes"
+    default: false
+  
+  simplehomes.limit.3:
+    description: "Allows 3 homes"
+    default: false
+  
+  simplehomes.limit.4:
+    description: "Allows 4 homes"
+    default: false
+  
+  simplehomes.limit.5:
+    description: "Allows 5 homes"
+    default: op
+  
+  simplehomes.limit.10:
+    description: "Allows 10 homes"
+    default: op
